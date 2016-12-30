@@ -1,0 +1,1 @@
+Directory needed to store images added through the app but can't leave it empty. You can delete this file after download.
