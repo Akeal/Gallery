@@ -1,0 +1,222 @@
+body{
+	background-color: #0d0d0d;
+	margin: 0px;
+	padding: 0px;
+}
+img{
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+p{
+	color: white;
+}
+#banner{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: linear-gradient(#3366ff, #0d0d0d);
+	width: 100%;
+	height: 75px;
+	z-index: 2;
+}
+.headlink{
+	background-color: #0d0d0d;
+	color: white;
+	padding: 15px;
+	position: absolute;
+	top: 5px;
+	border-radius: 5px;
+	/*border-top: 5px solid white;*/
+	box-shadow: 0px 8px 15px #0d0d0d;
+	text-decoration: none;
+}
+#addbody{
+	top: 100px;
+	width: 90%;
+	position: absolute;
+	left: 5%;
+}
+.headRut{
+        background-color: #3366ff;
+	border-left: 3px solid #0d0d0d;
+	border-top: 3px solid #0d0d0d;
+	border-right: 1px solid #0d0d0d;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 5px;
+	z-index: 3;
+}
+#linkStyle1{
+	left: 62px;
+}
+#linkStyle2{
+	left: 207px;
+}
+#linkStyle3{
+	left: 340px;
+}
+#linkStyle4{
+	left: 492px;
+}
+#headlink1{
+	left: 20px;
+	z-index: 4;
+}
+#headlink2{
+	left: 170px;
+	z-index: 4;
+}
+#headlink3{
+	left: 305px;
+	z-index: 4;
+}
+#headlink4{
+	left: 440px;
+	z-index: 4;
+}
+#gallerymain{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+}
+#previewdiv{
+	max-width: 100%;
+}
+.galleryleft{
+	position: absolute;
+	left: 2%;
+	width: 30%;
+}
+.gallerymiddle{
+	position: absolute;
+	left: 35%;
+	width: 30%;
+}
+.galleryright{
+	position: absolute;
+	left: 68%;
+	width: 30%;
+}
+.galleryimagediv{
+	position: absolute;
+	margin: auto;
+	width: 100%;
+}
+.galleryimage{
+	display: block;
+	margin: auto;
+	max-width: calc(100% - 120px);
+	max-height: 350px;
+	border: 30px solid #808080;
+	border-radius: 2px;
+	box-shadow: 0px 15px 15px black;
+	margin-bottom: 50px;
+	z-index: 0;
+	cursor: pointer;
+}
+.galleryimagezoomdiv{
+	position: fixed;
+	cursor: pointer;
+        top: 0px;
+        left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	background-color: black;
+	z-index: 500;
+}
+
+.galleryimagezoom{
+	display: block;
+	position: fixed;
+	left: 48%;
+	top: 10%;
+	max-width: 65%;
+	max-height: 75%;
+	border: 30px solid #808080;
+	border-radius: 2px;
+	z-index: 1000;
+}
+.leftselect{
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        width:50px;
+	height: 100px;
+        cursor: pointer;
+	left: 10%;
+}
+.rightselect{
+        display: block;
+        position: fixed;
+	transform: scaleX(-1);
+	height: 100px;
+	z-index: 1000;
+        width:50px;
+	cursor: pointer;
+	right: 10%;
+}
+.inputfile, #uploadButton{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label{
+	margin: auto;
+	font-size: 1.25em;
+	font-weight: 1000;
+	background-color: #3366ff;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+#uploadButton + label{
+        margin: auto;
+        font-size: 1.25em;
+        font-weight: 1000;
+        background-color: #3366ff;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+
+}
+.previewImg{
+	display: inline-block;
+	max-width: calc(100% - 60px);
+	max-height: 350px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 30px solid #808080;
+        border-radius: 2px;
+}
+.previewImgDiv{
+	position: relative;
+        display: inline-block;
+        max-width: 30%;
+	padding: 30px;
+	margin: 50px;
+}
+.uploadCanvas{
+	position: fixed;
+	top: 100px;
+	left: 500px;
+	visibility: hidden;
+}
+.deleteImg{
+	/*background: url("BaseImages/DeleteImg.png") left top no-repeat;*/
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
